@@ -16,9 +16,10 @@ I used the famous NVIDIA's CNN model architecture for this project as it has bee
 
 The model include ELU layers at each convolutional layer to introduce nonlinearity and the data is normalized in the model using a Keras lambda layer. The top 70 pixels and bottom 25 pixels are also cropped out using a Keras Cropping layer to remove the unnecessary background elements like sky, trees, grass, etc. that may distract the model from understanding the curvature of the road lane lines. This step reduces the size of the input images to 64x320x3.  
 
-The model contains dropout layers with a drop out rate of 50% in between the convolutional layers and also between the fully connected layers in order to reduce overfitting. I trained the model in small bacth sizes of 32 with a MSE (Mean Sqaure Errors) as the loss function and an Adam optimizer. At the end, the total traianble paramters were 348,219 for this specific setup.
+The model contains dropout layers (with a drop out rate of 50%) in between the convolutional layers and also between the fully connected layers in order to reduce overfitting. I trained the model in small batch sizes of 32 with a MSE (Mean Sqaure Errors) as the loss function and an Adam optimizer. At the end, the total traianble paramters were 348,219 for this specific setup.
 
 Here is a visualization of the architecture:
+
 ![model](https://github.com/AllenMendes/Behavioral-Cloning/blob/master/nvidia_network.png)
 
 #### 2. Creation of the Training Set & Training Process
