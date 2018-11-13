@@ -49,7 +49,7 @@ After few hours of the training the model, the final trained model was generated
 
 I loaded the model into the simulator using the drive.py file and the car started driving by itself using real time data from the cameras and completely controlled by the trained model !
 
-Here is the link to the final output video of track 1 : [Video]((https://drive.google.com/file/d/1aVgKcRkcEN7ZQdXAE8SMCLM68HEGTC-A/view?usp=sharing))
+Here is the link to the final output video of track 1 : [Video](https://drive.google.com/file/d/1aVgKcRkcEN7ZQdXAE8SMCLM68HEGTC-A/view?usp=sharing)
 
 Conclusions:
 1. Due to lack of time, I could not recorded enough data to generalize the model even further. But I am sure that collecting more data and augmenting it even further will make by model much much better !
