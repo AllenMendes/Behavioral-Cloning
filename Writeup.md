@@ -3,7 +3,6 @@
 The setup includes a simulator environment provided by Udacity with a car that has 3 cameras mounted on the left, center and right locations of the front facing windshield/hood, which also records the steering angle while driving around in the simulated environment. First, the user drives the car around on a track with straight and curve lanes with different textures of the road and lane lines while recording the camera and steering angle data. The model then learns how to drive the car around on the same track based on the data provided resulting in a self-driving car completely driven by a AI model.
 
 **Objectives:**
-The goals / steps of this project are the following:
 1. Use the simulator to collect data of good driving behavior
 2. Build, a convolution neural network in Keras that predicts steering angles from images
 3. Train and validate the model with a training and validation set
