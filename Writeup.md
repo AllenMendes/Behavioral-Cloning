@@ -31,13 +31,13 @@ To capture good driving behavior, I first recorded two laps on track one using c
 
 To augment the recorded dataset, I performed the following image processing techniques:
 
-1. **Random Brightness: **
+1. **Random Brightness:**
 To simulate variation of lighting conditions on the road, I performed random changes of brightness of the image by first converting the RGB image to its HSV equivalent and then randomly changing the Hue and Saturation values to brighten or darken the overall image intensity
 
-2. **Random Shadow: **
+2. **Random Shadow:**
 To simulate random patches of shadow on the road due to a tree or cloud cover or by adjacent vehicles/objects on the road, I first converted the image into the HLS equivalent and then selected a random shape in the image dimensions of 160x320 pixels to be a shadowed portion and changed its Hue and Light value to a random value
 
-3. **Image and steering angle flipping: **
+3. **Image and steering angle flipping:**
 I also flipped the center image and the steering angle value to augment more data and to further generalize the model. I also added a 25% correction to the images obtained from the left and right cameras so that the model aggressively takes harder turns at the edges if the car is close to either of the edges of the road
 
 At the end I had 4872 images to train on, out of which I separated this dataset into two parts: 3897 training images and 975 validation images
